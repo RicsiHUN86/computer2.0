@@ -65,6 +65,7 @@ namespace computer
                 Reg_UserL.Visibility = Visibility.Collapsed;
                 login_UserL.Visibility = Visibility.Collapsed;
                 Login_jelszoL.Visibility = Visibility.Collapsed;
+                sok.Visibility = Visibility.Collapsed;
 
             }
             else
@@ -99,11 +100,11 @@ namespace computer
         }
         private void kilepes_Click(object sender, RoutedEventArgs e)
         {
-            Reg_Label.Visibility = Visibility.Visible;
-            Reg_Button.Visibility = Visibility.Visible;
-            Reg_Pass1.Visibility = Visibility.Visible;
-            Reg_Pass2.Visibility = Visibility.Visible;
-            Reg_User.Visibility = Visibility.Visible;
+            Reg_Label.Visibility = Visibility.Collapsed;
+            Reg_Button.Visibility = Visibility.Collapsed;
+            Reg_Pass1.Visibility = Visibility.Collapsed;
+            Reg_Pass2.Visibility = Visibility.Collapsed;
+            Reg_User.Visibility = Visibility.Collapsed;
 
             username_txt.Visibility = Visibility.Visible;
             passwordBox.Visibility = Visibility.Visible;
@@ -113,11 +114,12 @@ namespace computer
             MainMenu.Visibility = Visibility.Collapsed;
             data.Visibility = Visibility.Collapsed;
 
-            Reg_Jelszo1L.Visibility = Visibility.Visible;
-            Reg_Jelszo2L.Visibility = Visibility.Visible;
-            Reg_UserL.Visibility = Visibility.Visible;
+            Reg_Jelszo1L.Visibility = Visibility.Collapsed;
+            Reg_Jelszo2L.Visibility = Visibility.Collapsed;
+            Reg_UserL.Visibility = Visibility.Collapsed;
             login_UserL.Visibility = Visibility.Visible;
             Login_jelszoL.Visibility = Visibility.Visible;
+            sok.Visibility = Visibility.Visible;
         }
 
 
@@ -162,6 +164,7 @@ namespace computer
                     Reg_Jelszo1L.Visibility = Visibility.Collapsed;
                     Reg_Jelszo2L.Visibility = Visibility.Collapsed;
                     Reg_UserL.Visibility = Visibility.Collapsed;
+                    sok.Visibility = Visibility.Collapsed;
                 }
                 else
                 {
@@ -174,7 +177,25 @@ namespace computer
             }
         }
 
+        private void Regisztracio_Click(object sender, RoutedEventArgs e)
+        {
+            Login_Label.Visibility = Visibility.Collapsed;
+            username_txt.Visibility = Visibility.Collapsed;
+            passwordBox.Visibility = Visibility.Collapsed;
+            Login_Button.Visibility = Visibility.Collapsed;
+            login_UserL.Visibility = Visibility.Collapsed;
+            Login_jelszoL.Visibility = Visibility.Collapsed;
 
+            Reg_Label.Visibility = Visibility.Visible;
+            Reg_User.Visibility = Visibility.Visible;
+            Reg_UserL.Visibility = Visibility.Visible;
+            Reg_Jelszo1L.Visibility = Visibility.Visible;
+            Reg_Jelszo2L.Visibility = Visibility.Visible;
+            Reg_Pass1.Visibility = Visibility.Visible;
+            Reg_Pass2.Visibility = Visibility.Visible;
+            Reg_Button.Visibility = Visibility.Visible;
+            sok.Visibility = Visibility.Collapsed;
+        }
 
     }
 }
